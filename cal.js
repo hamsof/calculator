@@ -1,3 +1,8 @@
+//this file just use two varibles it means we can only evaluate between two values
+//thats why i am not using it i am using other file cal_2.js for actual working
+//where i have implented a whole expression evaluatin system
+
+
 const t=document.querySelectorAll(".digit");
 const y=document.querySelectorAll(".operChild");
 y.forEach(key=>key.addEventListener("click",get_value));
