@@ -1,15 +1,21 @@
 //using eval that evaluates whole string like 3+34/3*4
-//it is dangerous
+//eval is danjerous read from mozilla
 
 
 
 
 //getting inputs
-const t=document.querySelectorAll(".digit");
-const y=document.querySelectorAll(".operChild");
+const t=document.querySelectorAll(".digit");//input of digit
+const y=document.querySelectorAll(".operChild");//input of operator
+
+
 y.forEach(key=>key.addEventListener("click",get_value));
 t.forEach(key=>key.addEventListener("click",get_value));
-var value_1=" ";
+
+
+var value_1=" ";//actual string where user is entering data
+
+
 //driver code
 function get_value() {
     if(this.textContent!="=")
