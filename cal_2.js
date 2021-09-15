@@ -9,6 +9,11 @@ const t=document.querySelectorAll(".digit");//input of digit
 const y=document.querySelectorAll(".operChild");//input of operator
 
 
+//calling same function for both operator and number
+//then i am adding this to a string value_1 like 1*2+2 until user enter =(equal sign)
+//then this string is beign evaluated using eval(value_1) to evaluate  
+//this is actual working of this file
+
 y.forEach(key=>key.addEventListener("click",get_value));
 t.forEach(key=>key.addEventListener("click",get_value));
 
